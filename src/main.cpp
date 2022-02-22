@@ -89,6 +89,8 @@ void reconnect()
   {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
+    // creat unique client ID
+    // in Mosquitto broker enable anom. access
     if (client.connect("ESP8266Client"))
     {
       Serial.println("connected");
